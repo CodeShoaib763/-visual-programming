@@ -1,0 +1,18 @@
+using system
+
+namespace hello{
+class ABC{
+
+static void main(string[] args)
+{
+int x=30;
+int y=40;
+int z=50;
+int n=25;
+
+int maxvalue=Math.Max(Math.Max(x,y),Math.Max(z,n));
+int minvalue=Math.Min(Math.Min(x,y),Math.Min(z,n));
+
+console.Writeline("Maxvalue"+maxvalue);
+console.Writeline("Minvalue"+minvalue);
+}}}
