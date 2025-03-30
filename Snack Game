@@ -1,0 +1,30 @@
+mport java.util.Scanner;
+
+public class SnackGame {
+   public SnackGame() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      int var2 = 0;
+      boolean var3 = true;
+      System.out.println("Welcome to the Snack Game!");
+
+      while(var3) {
+         System.out.println("Your current score is: " + var2);
+         System.out.println("Press '1' to eat a snack, '0' to exit.");
+         int var4 = var1.nextInt();
+         if (var4 == 1) {
+            var2 += 10;
+            System.out.println("Yum! You ate a snack.");
+         } else if (var4 == 0) {
+            var3 = false;
+            System.out.println("Thanks for playing! Your final score is: " + var2);
+         } else {
+            System.out.println("Invalid choice. Please try again.");
+         }
+      }
+
+      var1.close();
+   }
+}
